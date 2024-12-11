@@ -1,5 +1,6 @@
 import numpy as np
 from enum import Enum
+import time
 
 class PSCInputs(Enum):
     NT = "NT"
@@ -9,6 +10,15 @@ class PSCInputs(Enum):
         return self.value
     def __repr__(self):
         return self.value
+
+    def __eq__(self, other):
+        if isinstance(other, PSCInputs):
+            return self.value == other.value
+        elif isinstance(other, str):
+            return self.value == other
+    def __hash__(self):
+        return hash(self.value)
+        
 
 class PSCInputNs(Enum):
     NT = 0
@@ -33,6 +43,13 @@ class PSCOutputs(Enum):
         return self.value
     def __repr__(self):
         return self.value
+    def __eq__(self, other):
+        if isinstance(other, PSCOutputs):
+            return self.value == other.value
+        elif isinstance(other, str):
+            return self.value == other
+    def __hash__(self):
+        return hash(self.value)
 
 class PSCOutputNs(Enum):
     NT = 0
@@ -67,7 +84,10 @@ class state:
     def __str__(self):
         return f"{self.name}"
     def __eq__(self, other):
-        return self.name == other.name
+        if isinstance(other, state):
+            return self.name == other.name
+        elif isinstance(other, str):
+            return self.name == other
     def __hash__(self):
         return hash(self.name)
     def __len__(self):
@@ -196,8 +216,10 @@ class MarkovChain:
 
 
     def step(self, from_state, input):
-        states = self.transition_dict[from_state][input].keys()
-        probabilities = self.transition_dict[from_state][input].values()
+        # if isinstance(from_state, str):
+        #     from_state = self.states[self.state_index[from_state]]
+        states = list(self.transition_dict[from_state][input].keys())
+        probabilities = list(self.transition_dict[from_state][input].values())
         next_state = np.random.choice(states, 1, p=probabilities)
 
 
@@ -206,7 +228,7 @@ class MarkovChain:
         # self.state = np.random.choice(self.states, p=self.transition_matrix[self.state])
         # self.state_history.append(self.state)
         
-    def run(self, initial_state, steps, input_sequence):
+    def run(self, initial_state, input_sequence):
         '''
         :param initial_state: initial state of the Markov chain
         :param steps: number of steps to run the Markov chain
@@ -214,10 +236,77 @@ class MarkovChain:
         '''
         self.run_history = [initial_state]
         state = initial_state
-        for i in range(steps):
+        for i in range(len(input_sequence)):
             state = self.step(state, input_sequence[i])
             self.run_history.append(state)
-            
+        
+        return state
+    
+    def run_attack(self, 
+                initial_state, 
+                victim_thread,
+                input_sequence=None
+                ):
+        '''
+        execute Prime+Probe Attack 
+
+        :param initial_state: state to start the attack
+        :param victim_thread: the victim thread, which is T or NT
+        :param input_sequence: list of inputs to apply at each step. If None, use the default input sequence
+
+        :return count: the number of steps to probe the target
+        :return len(self.run_history): if input_sequence is not None, return the length of run_history
+        '''
+        # step 1: Prime the target
+        # The attacker first primes the target saturating counters to an initial state (e.g., ST) 
+        # with successive taken branches and then waits for the victim to execute.
+        i = 1
+        now_state = initial_state
+        while True:
+
+            now_state = self.step(now_state, PSCInputs.T)
+            if now_state == 'ST':
+                print("Prime the target successfully")
+                break
+            else:
+                print(f"Prime {i} times, current state is {now_state}")
+                i += 1
+                time.sleep(0.1)
+                continue
+        
+        # step 2: execute the victim thread
+        # The victim thread executes its branch with taken or not-taken 
+        # and changes the state of the saturating counter accordingly depending on the executed program.
+        now_state = self.step(now_state, victim_thread)
+
+        # step 3: Probe the target
+        # To distinguish the execution result of the victim’s branch, 
+        # the probe vector used for spy must be the opposite of the prime vector used for initialization. 
+        # Therefore, successive not-taken branches are executed. 
+        # It stops when the prediction is hit with the execution and the attacker counts the number of the steps in executing the branch.
+        if input_sequence is None:
+            # !!! WE MUST COUNT THE NUMBER OF STEPS
+            count = 0
+            while True:
+                now_state = self.step(now_state, PSCInputs.NT)
+                count += 1
+                if self.states[now_state].outputs == "NT":
+                    print(f"Probe the target successfully, the number of steps is {count}")
+
+                    return count
+                else:
+                    print(f"Probe {count} times, current state is {now_state}")
+                    time.sleep(0.1)
+                    continue
+                
+        else:
+            self.run(now_state, input_sequence)
+            print(f"Probe the target successfully, the current state is {self.run_history[-1]}")
+            return len(self.run_history)
+        
+
+
+
     def __getitem__(self, key):
         return self.states[key]
     
