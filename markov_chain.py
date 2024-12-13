@@ -16,6 +16,8 @@ class PSCInputs(Enum):
             return self.value == other.value
         elif isinstance(other, str):
             return self.value == other
+        elif isinstance(other, PSCOutputs):
+            return self.value == other.value
     def __hash__(self):
         return hash(self.value)
         
@@ -48,6 +50,8 @@ class PSCOutputs(Enum):
             return self.value == other.value
         elif isinstance(other, str):
             return self.value == other
+        elif isinstance(other, PSCInputs):
+            return self.value == other.value
     def __hash__(self):
         return hash(self.value)
 
