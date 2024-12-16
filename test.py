@@ -173,7 +173,7 @@ def test_markov_chain_step():
     # print(mc.run_history)
 
     # test attack
-    # count = mc.run_attack(states["SN"], 'T')
+    count = mc.run_attack(states["SN"], 'T')
 
 def test_saturating_counters():
     '''
@@ -196,5 +196,5 @@ def test_saturating_counters():
 if __name__ == "__main__":
     # test_markov_chain_construct_dict()
     # test_markov_chain_construct_matrix()
-    # test_markov_chain_step()
-    test_saturating_counters()
+    test_markov_chain_step()
+#     test_saturating_counters()
