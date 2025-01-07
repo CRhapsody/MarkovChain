@@ -146,13 +146,13 @@ class PrSaturatingCounter(markov_chain.MarkovChain):
         # c = self.run_attack(initial_state, victim_thread_branch)
         n = int(math.log2(len(self.states)/2))
         if c > 2**(n-1)/self.probability_threshold:
-            print("Attacker chooses T")
+            # print("Attacker chooses T")
             return "T"
         elif abs(c - 2**(n-1)/self.probability_threshold) < 1e-6:
-            print("Two choices are equally probable") 
+            # print("Two choices are equally probable") 
             return np.random.choice(["T", "NT"])
         else:
-            print("Attacker chooses NT")
+            # print("Attacker chooses NT")
             return "NT"
     
 
