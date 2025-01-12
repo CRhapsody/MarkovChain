@@ -14,8 +14,7 @@ def get_config():
     parser.add_argument('--p', type=float, default=0.5, help='Privacy threshold (p)')
     
     # States and Transitions
-    parser.add_argument('--states', type=str, nargs='+', default=["SN", "WN1", "WN2", "WN3", "ST", "WT1", "WT2", "WT3"], 
-                        help='List of states') # need construct state dict or list
+    parser.add_argument('--bit_number', type=str, default=None, help='Number of bits') # need construct state dict or list
     parser.add_argument('--transition_dict', type=str, 
                         help='Path to JSON file containing transition dictionary, such as {"state1": {"input1": {"to state11": probability11, "to state12": probability12}, "input2": {"to state21": probability21, "to state22": probability22}......}, "state2": {"input1": {"to state11": probability11, "to state12": probability12}, "input2": {"to state21": probability21, "to state22": probability22}......}, ...}')
     # parser.add_argument('--transition_matrix', type=str, default=None, help='Path to CSV file containing transition matrix')
@@ -28,6 +27,16 @@ def get_config():
     args = parser.parse_args()
     return args
 
+def construct_states(args):
+    '''
+    Construct states from bit number, such as ST, WT1, WT2, WT3, SN, WN1, WN2, WN3
+    '''
+    states = ["ST", "SN"]
+    for i in range(2**(int(args.bit_number)-1)):
+        states.append(f"WT{i+1}")
+        states.append(f"WN{i+1}")
+    return states
+        
 def initial_model(args):
     '''
     Initialize the Saturating Counters model
@@ -35,7 +44,7 @@ def initial_model(args):
     # states = [state(name, PSCInputs(output)) for name, output in zip(args.states, ['NT']*4 + ['T']*4)]
     # according state name to construct state object, if state name has NT, then output is NT, otherwise output is T
     print('Now we init the model')
-    states = [state(name, PSCInputs.NT if 'N' in name else PSCInputs.T) for name in args.states]
+    states = construct_states(args)
     # read transition dictionary from file
     with open(args.transition_dict, 'r') as f:
         transition_dict = json.load(f)
@@ -52,7 +61,7 @@ def initial_model(args):
     else:
         raise ValueError("Invalid model type")
 
-def main():
+def attack():
     args = get_config()
     model = initial_model(args)
     print('Now we run the attack')
@@ -78,7 +87,7 @@ def main():
                 sep='\n')
 
 if __name__ == '__main__':
-    main()
+    attack()
 
     
 
