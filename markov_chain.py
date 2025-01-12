@@ -128,7 +128,10 @@ class MarkovChain:
     
     def map_state_into_index(self):
         if isinstance(self.states, list):
-            self.state_index = {state.name: i for i, state in enumerate(self.states)}
+            if isinstance(self.states[0], state):
+                self.state_index = {state.name: i for i, state in enumerate(self.states)}
+            elif isinstance(self.states[0], str):
+                self.state_index = {state: i for i, state in enumerate(self.states)}
         elif isinstance(self.states, dict):
             self.state_index = {state.name: i for i, state in enumerate(self.states.values())}
 
@@ -249,7 +252,8 @@ class MarkovChain:
     def run_attack(self, 
                 initial_state, 
                 victim_thread,
-                input_sequence=None
+                input_sequence=None,
+                is_probe_step_number = None
                 ):
         '''
         execute Prime+Probe Attack 
@@ -257,6 +261,7 @@ class MarkovChain:
         :param initial_state: state to start the attack
         :param victim_thread: the victim thread, which is T or NT
         :param input_sequence: list of inputs to apply at each step. If None, use the default input sequence
+        :param is_probe_step_number: the number of steps to probe the target. If None, count the number of steps to probe the target
 
         :return count: the number of steps to probe the target
         :return len(self.run_history): if input_sequence is not None, return the length of run_history
@@ -270,10 +275,10 @@ class MarkovChain:
 
             now_state = self.step(now_state, PSCInputs.T)
             if now_state == 'ST':
-                print("Prime the target successfully")
+                # print("Prime the target successfully")
                 break
             else:
-                print(f"Prime {i} times, current state is {now_state}")
+                # print(f"Prime {i} times, current state is {now_state}")
                 i += 1
                 time.sleep(0.1)
                 continue
@@ -295,11 +300,11 @@ class MarkovChain:
                 now_state = self.step(now_state, PSCInputs.NT)
                 count += 1
                 if self.states[now_state].outputs == "NT":
-                    print(f"Probe the target successfully, the number of steps is {count}")
+                    # print(f"Probe the target successfully, the number of steps is {count}")
 
                     return count
                 else:
-                    print(f"Probe {count} times, current state is {now_state}")
+                    # print(f"Probe {count} times, current state is {now_state}")
                     time.sleep(0.1)
                     continue
                 

@@ -33,6 +33,29 @@ class ThreeBitPSC:
                 PSCInputs.NT: {"SN": m, "WT3": 1-m}}
     }
 
+
+class privacyTwoBitPSC:
+        m = 0.1
+        p = 0.1
+        states = {
+                "SN": state("SN",   PSCOutputs.NT),
+                "WN1": state("WN1", PSCOutputs.NT),
+                "ST": state("ST",   PSCOutputs.T),
+                "WT1": state("WT1", PSCOutputs.T),
+        },
+        transition_dict = {
+                "SN":  {PSCInputs.NT: {"SN": 1-m+m*(1-p), "WN1": m*p},
+                        PSCInputs.T: {"WN1": m*(1-p), "SN": 1-m+m*p}},
+                "WN1": {PSCInputs.NT: {"SN": m, "WN1": 1-m}, 
+                        PSCInputs.T: {"ST": m, "WN1": 1-m}},
+                "ST":  {PSCInputs.NT: {"WT1": m*(1-p), "ST": 1-m+m*p},
+                        PSCInputs.T: {"ST": 1-m+m*(1-p), "WT1": m*p}},
+                "WT1": {PSCInputs.T: {"WT1": 1-m, "ST": m}, 
+                        PSCInputs.NT: {"SN": m, "WT1": 1-m}}
+        }
+
+
+
 class PrivacyThreeBitPSC:
     m = 0.1
     p = 0.1
@@ -68,9 +91,9 @@ class PrivacyThreeBitPSC:
                 PSCInputs.T: {"WN1": m*(1-p), "SN": 1-m+m*p}},
         "WN1": {PSCInputs.NT: {"SN": m, "WN1": 1-m}, 
                 PSCInputs.T: {"WN2": m, "WN1": 1-m}},
-        "WN2": {PSCInputs.NT: {"WN1": 1-m, "WN2": m},
+        "WN2": {PSCInputs.NT: {"WN1": m, "WN2": 1-m},
                 PSCInputs.T: {"WN3": m, "WN2": 1-m}},
-        "WN3": {PSCInputs.NT: {"WN2": 1-m, "WN3": m},
+        "WN3": {PSCInputs.NT: {"WN2": m, "WN3": 1-m},
                 PSCInputs.T: {"ST": m, "WN3": 1-m}},
 
         "ST":  {PSCInputs.NT: {"WT1": m*(1-p), "ST": 1-m+m*p},
@@ -99,7 +122,7 @@ def test_markov_chain_construct_dict():
     print(mc.transition_dict)
     print(mc.transition_matrix)
     print(mc.states)
-
+    print("Test pass")
 def test_markov_chain_construct_matrix():
     '''
     Test the MarkovChain class
@@ -122,7 +145,7 @@ def test_markov_chain_construct_matrix():
     print(mc.transition_dict)
     print(mc.transition_matrix)
     print(mc.states)
-
+    print("Test pass")
 
 def test_markov_chain_step():
     '''
@@ -174,7 +197,7 @@ def test_markov_chain_step():
 
     # test attack
     count = mc.run_attack(states["SN"], 'T')
-
+    print("Test pass")
 def test_saturating_counters():
     '''
     Test the SaturatingCounters class
@@ -192,9 +215,10 @@ def test_saturating_counters():
                                     probability_threshold=0.1,
                                     privacy_threshold=0.1,
                                     transition_dict=PrivacyThreeBitPSC.transition_dict)
+    print("Test pass")
 
 if __name__ == "__main__":
     # test_markov_chain_construct_dict()
     # test_markov_chain_construct_matrix()
-    test_markov_chain_step()
-#     test_saturating_counters()
+#     test_markov_chain_step()
+    test_saturating_counters()

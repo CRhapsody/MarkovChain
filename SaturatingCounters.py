@@ -116,27 +116,35 @@ class PrSaturatingCounter(markov_chain.MarkovChain):
         P(ST, T, ST) = 1, P(ST, NT, WT1) = m,
         P(WTi, NT, WTi+1) = m, P(WTi+1, T, WTi) = m,
         P(WTi, T, WTi) = 1 − m, P(WTi, NT, WTi) = 1 − m,
+        p(WT_{2^(bit-1)-1}, NT, SN) = m, P(WN_{2^(bit-1)-1}, T, ST) = m
+        p(WT_{2^(bit-1)-1}, T, WT_{2^(bit-1)-1}) = 1 - m, P(WN_{2^(bit-1)-1}, NT, WN_{2^(bit-1)-1}) = 1 - m
         '''
         assert self.transition_dict["SN"]["NT"]["SN"] == 1
         assert self.transition_dict["SN"]["T"]["WN1"] == self.probability_threshold
         assert self.transition_dict["ST"]["T"]["ST"] == 1
         assert self.transition_dict["ST"]["NT"]["WT1"] == self.probability_threshold
-        for i in range(1, int(math.log2(len(self.states)/2))):
-            assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i+1)] == self.probability_threshold
+        last_number = int(len(self.states)/2) -1
+        assert self.transition_dict["WT"+str(last_number)]["NT"]["SN"] == self.probability_threshold
+        assert self.transition_dict["WN"+str(last_number)]["T"]["ST"] == self.probability_threshold
+        assert self.transition_dict["WT"+str(last_number)]["T"]["WT"+str(last_number)] == 1 - self.probability_threshold
+        assert self.transition_dict["WN"+str(last_number)]["NT"]["WN"+str(last_number)] == 1 - self.probability_threshold
+        if len(self.states) > 4: # 2-bit doesn't have WN2, WT2
+            for i in range(1, int(math.log2(len(self.states)/2))):
+                assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i+1)] == self.probability_threshold
 
 
-            assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i)] == 1 - self.probability_threshold
-            assert self.transition_dict["WN"+str(i)]["NT"]["WN"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WN"+str(i)]["NT"]["WN"+str(i)] == 1 - self.probability_threshold
 
-            assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i+1)] == self.probability_threshold
+                assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i+1)] == self.probability_threshold
 
 
-            assert self.transition_dict["WT"+str(i)]["T"]["WT"+str(i)] == 1 - self.probability_threshold
-            assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WT"+str(i)]["T"]["WT"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i)] == 1 - self.probability_threshold
 
-            if i != int(math.log2(len(self.states)/2)) - 1:
-                assert self.transition_dict["WN"+str(i+1)]["NT"]["WN"+str(i)] == self.probability_threshold
-                assert self.transition_dict["WT"+str(i+1)]["T"]["WT"+str(i)] == self.probability_threshold
+                if i != int(math.log2(len(self.states)/2)) - 1:
+                    assert self.transition_dict["WN"+str(i+1)]["NT"]["WN"+str(i)] == self.probability_threshold
+                    assert self.transition_dict["WT"+str(i+1)]["T"]["WT"+str(i)] == self.probability_threshold
     def get_attack_strategy(self, c):
         '''
         Get the attack strategy from the output of attack c and probability threshold m. If c > 2^{n-1}/m, then the probability is higher that the branch of the victim thread is T;
@@ -205,6 +213,10 @@ class PrivacySaturatingCounter(SaturatingCounters):
         P(WTi, NT, WTi+1) = m, P(WTi+1, T, WTi) = m,
 
         P(WTi, T, WTi) = 1 − m, P(WTi, NT, WTi) = 1 − m,
+
+        p(WT_{2^(bit-1)-1}, NT, SN) = m, P(WN_{2^(bit-1)-1}, T, ST) = m
+
+        p(WT_{2^(bit-1)-1}, T, WT_{2^(bit-1)-1}) = 1 - m, P(WN_{2^(bit-1)-1}, NT, WN_{2^(bit-1)-1}) = 1 - m
         '''
         assert self.transition_dict["SN"]["T"]["SN"] == 1 - self.probability_threshold + self.probability_threshold*self.privacy_threshold
         assert self.transition_dict["SN"]["T"]["WN1"] == self.probability_threshold*(1 - self.privacy_threshold)
@@ -214,19 +226,44 @@ class PrivacySaturatingCounter(SaturatingCounters):
         assert self.transition_dict["ST"]["T"]["WT1"] == self.probability_threshold*self.privacy_threshold
         assert self.transition_dict["ST"]["NT"]["ST"] == 1 - self.probability_threshold + self.probability_threshold*self.privacy_threshold
         assert self.transition_dict["ST"]["NT"]["WT1"] == self.probability_threshold*(1 - self.privacy_threshold)
-        for i in range(1, int(math.log2(len(self.states)/2))):
-            assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i+1)] == self.probability_threshold
+        last_number = int(len(self.states)/2) -1
+        assert self.transition_dict["WT"+str(last_number)]["NT"]["SN"] == self.probability_threshold
+        assert self.transition_dict["WN"+str(last_number)]["T"]["ST"] == self.probability_threshold
+        assert self.transition_dict["WT"+str(last_number)]["T"]["WT"+str(last_number)] == 1 - self.probability_threshold
+        assert self.transition_dict["WN"+str(last_number)]["NT"]["WN"+str(last_number)] == 1 - self.probability_threshold
+        if len(self.states) > 4: # 2-bit doesn't have WN2, WT2
+            for i in range(1, int(math.log2(len(self.states)/2))):
+                assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i+1)] == self.probability_threshold
 
 
-            assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i)] == 1 - self.probability_threshold
-            assert self.transition_dict["WN"+str(i)]["NT"]["WN"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WN"+str(i)]["NT"]["WN"+str(i)] == 1 - self.probability_threshold
 
-            assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i+1)] == self.probability_threshold
+                assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i+1)] == self.probability_threshold
 
 
-            assert self.transition_dict["WT"+str(i)]["T"]["WT"+str(i)] == 1 - self.probability_threshold
-            assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i)] == 1 - self.probability_threshold
-            if i != int(math.log2(len(self.states)/2)) - 1:
-                assert self.transition_dict["WN"+str(i+1)]["NT"]["WN"+str(i)] == self.probability_threshold
-                assert self.transition_dict["WT"+str(i+1)]["T"]["WT"+str(i)] == self.probability_threshold
+                assert self.transition_dict["WT"+str(i)]["T"]["WT"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i)] == 1 - self.probability_threshold
+                if i != int(math.log2(len(self.states)/2)) - 1:
+                    assert self.transition_dict["WN"+str(i+1)]["NT"]["WN"+str(i)] == self.probability_threshold
+                    assert self.transition_dict["WT"+str(i+1)]["T"]["WT"+str(i)] == self.probability_threshold
     
+    def get_attack_strategy(self, c):
+        '''
+        For experiment comparing the guard level between PrSaturatingCounter and PrivacySaturatingCounter
+        Get the attack strategy from the output of attack c and probability threshold m. If c > 2^{n-1}/m, then the probability is higher that the branch of the victim thread is T;
+        if c = 2^{n-1}/m, then there is equal probability that the branch of the victim thread is T or NT;
+        otherwise it is NT
+        '''
+        # c = self.run_attack(initial_state, victim_thread_branch)
+        n = int(math.log2(len(self.states)/2))
+        judge = (2**(n-1)-1)/self.probability_threshold
+        if c > judge:
+            # print("Attacker chooses T")
+            return "T"
+        elif abs(c - judge) < 1e-6:
+            # print("Two choices are equally probable") 
+            return np.random.choice(["T", "NT"])
+        else:
+            # print("Attacker chooses NT")
+            return "NT"
