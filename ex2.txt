@@ -1,0 +1,164 @@
+The privacy parameter is 0.2, and the probability parameter is 0.1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+The success count is 0
+The success count is 0
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 100
+The success count is 100
+The success count is 150
+The success count is 150
+The success count is 150
+The success count is 200
+The success count is 250
+The success count is 250
+The success count is 250
+The success count is 250
+The success count is 300
+The success count is 300
+The success count is 300
+The success count is 350
+The success count is 400
+The success count is 450
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.482 when probability_parameter = 0.1 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+The success count is 0
+The success count is 0
+The success count is 0
+The success count is 0
+The success count is 0
+The success count is 0
+The success count is 50
+The success count is 100
+The success count is 150
+The success count is 200
+The success count is 200
+The success count is 250
+The success count is 250
+The success count is 300
+The success count is 350
+The success count is 350
+The success count is 350
+The success count is 400
+The success count is 450
+The success count is 450
+The success count is 450
+The success count is 450
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.495 when probability_parameter = 0.1 and privacy_parameter = 0.2
+Experiment 1 is finished, the privacy parameter is 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+The success count is 0
+The success count is 50
+The success count is 50
+The success count is 100
+The success count is 150
+The success count is 200
+The success count is 250
+The success count is 300
+The success count is 300
+The success count is 350
+The success count is 400
+The success count is 450
+The success count is 500
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.532 when probability_parameter = 0.2 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+The success count is 0
+The success count is 0
+The success count is 0
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 50
+The success count is 100
+The success count is 150
+The success count is 200
+The success count is 200
+The success count is 200
+The success count is 250
+The success count is 300
+The success count is 300
+The success count is 350
+The success count is 350
+The success count is 350
+The success count is 350
+The success count is 350
+The success count is 400
+The success count is 400
+The success count is 400
+The success count is 400
+The success count is 400
+The success count is 400
+The success count is 400
+The success count is 450
+The success count is 450
+The success count is 450
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.493 when probability_parameter = 0.2 and privacy_parameter = 0.2
+Experiment 1 is finished, the privacy parameter is 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+The success count is 50
+The success count is 100
+The success count is 100
+The success count is 100
+The success count is 150
+The success count is 200
+The success count is 250
+The success count is 250
+The success count is 250
+The success count is 300
+The success count is 350
+The success count is 400
+The success count is 400
+The success count is 450
+The success count is 500
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.548 when probability_parameter = 0.3 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+The success count is 50
+The success count is 100
+The success count is 100
+The success count is 150
+The success count is 150
+The success count is 200
+The success count is 250
+The success count is 250
+The success count is 300
+The success count is 350
+The success count is 350
+The success count is 350
+The success count is 400
+The success count is 450
+The success count is 450
+The success count is 500
+The success count is 500
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.52 when probability_parameter = 0.3 and privacy_parameter = 0.2
+Experiment 1 is finished, the privacy parameter is 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+The success count is 50
+The success count is 100
+The success count is 150
+The success count is 200
+The success count is 250
+The success count is 250
+The success count is 250

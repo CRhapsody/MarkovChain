@@ -1,0 +1,1026 @@
+The privacy parameter is 0.1, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.532 when probability_parameter = 0.2 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.55 when probability_parameter = 0.2 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.568 when probability_parameter = 0.3 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.512 when probability_parameter = 0.3 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.555 when probability_parameter = 0.4 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.581 when probability_parameter = 0.4 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.625 when probability_parameter = 0.5 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.624 when probability_parameter = 0.5 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.623 when probability_parameter = 0.6 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.621 when probability_parameter = 0.6 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.67 when probability_parameter = 0.7 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.602 when probability_parameter = 0.7 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.744 when probability_parameter = 0.8 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.622 when probability_parameter = 0.8 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.848 when probability_parameter = 0.9 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.74 when probability_parameter = 0.9 and privacy_parameter = 0.1
+The privacy parameter is 0.1, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.903 when probability_parameter = 1 and privacy_parameter = 0.1
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.914 when probability_parameter = 1 and privacy_parameter = 0.1
+Experiment 2 for the privacy parameter is 0.1 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914]
+The privacy parameter is 0.2, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.536 when probability_parameter = 0.2 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.54 when probability_parameter = 0.2 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.555 when probability_parameter = 0.3 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.499 when probability_parameter = 0.3 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.562 when probability_parameter = 0.4 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.568 when probability_parameter = 0.4 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.641 when probability_parameter = 0.5 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.614 when probability_parameter = 0.5 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.588 when probability_parameter = 0.6 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.62 when probability_parameter = 0.6 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.55 when probability_parameter = 0.7 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.576 when probability_parameter = 0.7 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.648 when probability_parameter = 0.8 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.583 when probability_parameter = 0.8 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.655 when probability_parameter = 0.9 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.665 when probability_parameter = 0.9 and privacy_parameter = 0.2
+The privacy parameter is 0.2, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.689 when probability_parameter = 1 and privacy_parameter = 0.2
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.754 when probability_parameter = 1 and privacy_parameter = 0.2
+Experiment 2 for the privacy parameter is 0.2 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754]
+The privacy parameter is 0.3, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.556 when probability_parameter = 0.2 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.557 when probability_parameter = 0.2 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.491 when probability_parameter = 0.3 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.469 when probability_parameter = 0.3 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.538 when probability_parameter = 0.4 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.572 when probability_parameter = 0.4 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.531 when probability_parameter = 0.5 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.545 when probability_parameter = 0.5 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.493 when probability_parameter = 0.6 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.574 when probability_parameter = 0.6 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.523 when probability_parameter = 0.7 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.574 when probability_parameter = 0.7 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.534 when probability_parameter = 0.8 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.55 when probability_parameter = 0.8 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.641 when probability_parameter = 0.9 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.612 when probability_parameter = 0.9 and privacy_parameter = 0.3
+The privacy parameter is 0.3, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.646 when probability_parameter = 1 and privacy_parameter = 0.3
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.599 when probability_parameter = 1 and privacy_parameter = 0.3
+Experiment 2 for the privacy parameter is 0.3 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689, 0.556, 0.491, 0.538, 0.531, 0.493, 0.523, 0.534, 0.641, 0.646]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754, 0.557, 0.469, 0.572, 0.545, 0.574, 0.574, 0.55, 0.612, 0.599]
+The privacy parameter is 0.4, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.478 when probability_parameter = 0.2 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.54 when probability_parameter = 0.2 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.498 when probability_parameter = 0.3 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.487 when probability_parameter = 0.3 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.526 when probability_parameter = 0.4 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.508 when probability_parameter = 0.4 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.541 when probability_parameter = 0.5 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.559 when probability_parameter = 0.5 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.424 when probability_parameter = 0.6 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.6 when probability_parameter = 0.6 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.499 when probability_parameter = 0.7 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.563 when probability_parameter = 0.7 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.612 when probability_parameter = 0.8 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.535 when probability_parameter = 0.8 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.59 when probability_parameter = 0.9 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.591 when probability_parameter = 0.9 and privacy_parameter = 0.4
+The privacy parameter is 0.4, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.448 when probability_parameter = 1 and privacy_parameter = 0.4
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.478 when probability_parameter = 1 and privacy_parameter = 0.4
+Experiment 2 for the privacy parameter is 0.4 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689, 0.556, 0.491, 0.538, 0.531, 0.493, 0.523, 0.534, 0.641, 0.646, 0.478, 0.498, 0.526, 0.541, 0.424, 0.499, 0.612, 0.59, 0.448]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754, 0.557, 0.469, 0.572, 0.545, 0.574, 0.574, 0.55, 0.612, 0.599, 0.54, 0.487, 0.508, 0.559, 0.6, 0.563, 0.535, 0.591, 0.478]
+The privacy parameter is 0.5, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.455 when probability_parameter = 0.2 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.527 when probability_parameter = 0.2 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.505 when probability_parameter = 0.3 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.479 when probability_parameter = 0.3 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.479 when probability_parameter = 0.4 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.468 when probability_parameter = 0.4 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.52 when probability_parameter = 0.5 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.457 when probability_parameter = 0.5 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.434 when probability_parameter = 0.6 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.612 when probability_parameter = 0.6 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.402 when probability_parameter = 0.7 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.506 when probability_parameter = 0.7 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.548 when probability_parameter = 0.8 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.499 when probability_parameter = 0.8 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.556 when probability_parameter = 0.9 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.501 when probability_parameter = 0.9 and privacy_parameter = 0.5
+The privacy parameter is 0.5, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.357 when probability_parameter = 1 and privacy_parameter = 0.5
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.353 when probability_parameter = 1 and privacy_parameter = 0.5
+Experiment 2 for the privacy parameter is 0.5 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689, 0.556, 0.491, 0.538, 0.531, 0.493, 0.523, 0.534, 0.641, 0.646, 0.478, 0.498, 0.526, 0.541, 0.424, 0.499, 0.612, 0.59, 0.448, 0.455, 0.505, 0.479, 0.52, 0.434, 0.402, 0.548, 0.556, 0.357]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754, 0.557, 0.469, 0.572, 0.545, 0.574, 0.574, 0.55, 0.612, 0.599, 0.54, 0.487, 0.508, 0.559, 0.6, 0.563, 0.535, 0.591, 0.478, 0.527, 0.479, 0.468, 0.457, 0.612, 0.506, 0.499, 0.501, 0.353]
+The privacy parameter is 0.6, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.421 when probability_parameter = 0.2 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.514 when probability_parameter = 0.2 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.42 when probability_parameter = 0.3 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.476 when probability_parameter = 0.3 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.479 when probability_parameter = 0.4 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.473 when probability_parameter = 0.4 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.47 when probability_parameter = 0.5 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.464 when probability_parameter = 0.5 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.376 when probability_parameter = 0.6 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.413 when probability_parameter = 0.6 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.3 when probability_parameter = 0.7 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.425 when probability_parameter = 0.7 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.387 when probability_parameter = 0.8 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.44 when probability_parameter = 0.8 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.38 when probability_parameter = 0.9 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.456 when probability_parameter = 0.9 and privacy_parameter = 0.6
+The privacy parameter is 0.6, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.222 when probability_parameter = 1 and privacy_parameter = 0.6
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.281 when probability_parameter = 1 and privacy_parameter = 0.6
+Experiment 2 for the privacy parameter is 0.6 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689, 0.556, 0.491, 0.538, 0.531, 0.493, 0.523, 0.534, 0.641, 0.646, 0.478, 0.498, 0.526, 0.541, 0.424, 0.499, 0.612, 0.59, 0.448, 0.455, 0.505, 0.479, 0.52, 0.434, 0.402, 0.548, 0.556, 0.357, 0.421, 0.42, 0.479, 0.47, 0.376, 0.3, 0.387, 0.38, 0.222]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754, 0.557, 0.469, 0.572, 0.545, 0.574, 0.574, 0.55, 0.612, 0.599, 0.54, 0.487, 0.508, 0.559, 0.6, 0.563, 0.535, 0.591, 0.478, 0.527, 0.479, 0.468, 0.457, 0.612, 0.506, 0.499, 0.501, 0.353, 0.514, 0.476, 0.473, 0.464, 0.413, 0.425, 0.44, 0.456, 0.281]
+The privacy parameter is 0.7, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.442 when probability_parameter = 0.2 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.439 when probability_parameter = 0.2 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.422 when probability_parameter = 0.3 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.477 when probability_parameter = 0.3 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.48 when probability_parameter = 0.4 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.443 when probability_parameter = 0.4 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.475 when probability_parameter = 0.5 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.443 when probability_parameter = 0.5 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.327 when probability_parameter = 0.6 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.46 when probability_parameter = 0.6 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.347 when probability_parameter = 0.7 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.455 when probability_parameter = 0.7 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.325 when probability_parameter = 0.8 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.373 when probability_parameter = 0.8 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.244 when probability_parameter = 0.9 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.332 when probability_parameter = 0.9 and privacy_parameter = 0.7
+The privacy parameter is 0.7, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.167 when probability_parameter = 1 and privacy_parameter = 0.7
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.214 when probability_parameter = 1 and privacy_parameter = 0.7
+Experiment 2 for the privacy parameter is 0.7 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689, 0.556, 0.491, 0.538, 0.531, 0.493, 0.523, 0.534, 0.641, 0.646, 0.478, 0.498, 0.526, 0.541, 0.424, 0.499, 0.612, 0.59, 0.448, 0.455, 0.505, 0.479, 0.52, 0.434, 0.402, 0.548, 0.556, 0.357, 0.421, 0.42, 0.479, 0.47, 0.376, 0.3, 0.387, 0.38, 0.222, 0.442, 0.422, 0.48, 0.475, 0.327, 0.347, 0.325, 0.244, 0.167]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754, 0.557, 0.469, 0.572, 0.545, 0.574, 0.574, 0.55, 0.612, 0.599, 0.54, 0.487, 0.508, 0.559, 0.6, 0.563, 0.535, 0.591, 0.478, 0.527, 0.479, 0.468, 0.457, 0.612, 0.506, 0.499, 0.501, 0.353, 0.514, 0.476, 0.473, 0.464, 0.413, 0.425, 0.44, 0.456, 0.281, 0.439, 0.477, 0.443, 0.443, 0.46, 0.455, 0.373, 0.332, 0.214]
+The privacy parameter is 0.8, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.404 when probability_parameter = 0.2 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.449 when probability_parameter = 0.2 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.446 when probability_parameter = 0.3 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.435 when probability_parameter = 0.3 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.391 when probability_parameter = 0.4 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.458 when probability_parameter = 0.4 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.467 when probability_parameter = 0.5 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.454 when probability_parameter = 0.5 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.348 when probability_parameter = 0.6 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.402 when probability_parameter = 0.6 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.309 when probability_parameter = 0.7 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.441 when probability_parameter = 0.7 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.287 when probability_parameter = 0.8 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.338 when probability_parameter = 0.8 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.23 when probability_parameter = 0.9 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.337 when probability_parameter = 0.9 and privacy_parameter = 0.8
+The privacy parameter is 0.8, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.101 when probability_parameter = 1 and privacy_parameter = 0.8
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.14 when probability_parameter = 1 and privacy_parameter = 0.8
+Experiment 2 for the privacy parameter is 0.8 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689, 0.556, 0.491, 0.538, 0.531, 0.493, 0.523, 0.534, 0.641, 0.646, 0.478, 0.498, 0.526, 0.541, 0.424, 0.499, 0.612, 0.59, 0.448, 0.455, 0.505, 0.479, 0.52, 0.434, 0.402, 0.548, 0.556, 0.357, 0.421, 0.42, 0.479, 0.47, 0.376, 0.3, 0.387, 0.38, 0.222, 0.442, 0.422, 0.48, 0.475, 0.327, 0.347, 0.325, 0.244, 0.167, 0.404, 0.446, 0.391, 0.467, 0.348, 0.309, 0.287, 0.23, 0.101]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754, 0.557, 0.469, 0.572, 0.545, 0.574, 0.574, 0.55, 0.612, 0.599, 0.54, 0.487, 0.508, 0.559, 0.6, 0.563, 0.535, 0.591, 0.478, 0.527, 0.479, 0.468, 0.457, 0.612, 0.506, 0.499, 0.501, 0.353, 0.514, 0.476, 0.473, 0.464, 0.413, 0.425, 0.44, 0.456, 0.281, 0.439, 0.477, 0.443, 0.443, 0.46, 0.455, 0.373, 0.332, 0.214, 0.449, 0.435, 0.458, 0.454, 0.402, 0.441, 0.338, 0.337, 0.14]
+The privacy parameter is 0.9, and the probability parameter is 0.2
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.402 when probability_parameter = 0.2 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.459 when probability_parameter = 0.2 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 0.3
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.497 when probability_parameter = 0.3 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.434 when probability_parameter = 0.3 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 0.4
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.367 when probability_parameter = 0.4 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.331 when probability_parameter = 0.4 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 0.5
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.397 when probability_parameter = 0.5 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.399 when probability_parameter = 0.5 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 0.6
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.379 when probability_parameter = 0.6 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.399 when probability_parameter = 0.6 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 0.7
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.314 when probability_parameter = 0.7 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.472 when probability_parameter = 0.7 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 0.8
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.257 when probability_parameter = 0.8 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.361 when probability_parameter = 0.8 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 0.9
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.22 when probability_parameter = 0.9 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.258 when probability_parameter = 0.9 and privacy_parameter = 0.9
+The privacy parameter is 0.9, and the probability parameter is 1
+PrivacySaturatingCounter
+2-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 2-bit PSC is 0.042 when probability_parameter = 1 and privacy_parameter = 0.9
+3-bit privacy PSC
+No transition matrix is provided, construct empty transition matrix
+start parallel
+The number of processes is 64.
+The average success rate of PrivacySaturatingCounter with 3-bit PSC is 0.08 when probability_parameter = 1 and privacy_parameter = 0.9
+Experiment 2 for the privacy parameter is 0.9 is finished
+The result is:
+2-bit privacy PSC
+[0.532, 0.568, 0.555, 0.625, 0.623, 0.67, 0.744, 0.848, 0.903, 0.536, 0.555, 0.562, 0.641, 0.588, 0.55, 0.648, 0.655, 0.689, 0.556, 0.491, 0.538, 0.531, 0.493, 0.523, 0.534, 0.641, 0.646, 0.478, 0.498, 0.526, 0.541, 0.424, 0.499, 0.612, 0.59, 0.448, 0.455, 0.505, 0.479, 0.52, 0.434, 0.402, 0.548, 0.556, 0.357, 0.421, 0.42, 0.479, 0.47, 0.376, 0.3, 0.387, 0.38, 0.222, 0.442, 0.422, 0.48, 0.475, 0.327, 0.347, 0.325, 0.244, 0.167, 0.404, 0.446, 0.391, 0.467, 0.348, 0.309, 0.287, 0.23, 0.101, 0.402, 0.497, 0.367, 0.397, 0.379, 0.314, 0.257, 0.22, 0.042]
+3-bit privacy PSC
+[0.55, 0.512, 0.581, 0.624, 0.621, 0.602, 0.622, 0.74, 0.914, 0.54, 0.499, 0.568, 0.614, 0.62, 0.576, 0.583, 0.665, 0.754, 0.557, 0.469, 0.572, 0.545, 0.574, 0.574, 0.55, 0.612, 0.599, 0.54, 0.487, 0.508, 0.559, 0.6, 0.563, 0.535, 0.591, 0.478, 0.527, 0.479, 0.468, 0.457, 0.612, 0.506, 0.499, 0.501, 0.353, 0.514, 0.476, 0.473, 0.464, 0.413, 0.425, 0.44, 0.456, 0.281, 0.439, 0.477, 0.443, 0.443, 0.46, 0.455, 0.373, 0.332, 0.214, 0.449, 0.435, 0.458, 0.454, 0.402, 0.441, 0.338, 0.337, 0.14, 0.459, 0.434, 0.331, 0.399, 0.399, 0.472, 0.361, 0.258, 0.08]

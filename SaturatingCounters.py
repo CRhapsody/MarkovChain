@@ -106,6 +106,7 @@ class PrSaturatingCounter(markov_chain.MarkovChain):
         '''
         super().__init__(states, transition_dict, transition_matrix)
         self.probability_threshold = probability_threshold
+        assert 0 < self.probability_threshold <= 1
         self.is_member()
     
     def is_member(self):
@@ -147,21 +148,33 @@ class PrSaturatingCounter(markov_chain.MarkovChain):
                     assert self.transition_dict["WT"+str(i+1)]["T"]["WT"+str(i)] == self.probability_threshold
     def get_attack_strategy(self, c):
         '''
+        For experiment comparing the guard level between PrSaturatingCounter and PrivacySaturatingCounter
         Get the attack strategy from the output of attack c and probability threshold m. If c > 2^{n-1}/m, then the probability is higher that the branch of the victim thread is T;
         if c = 2^{n-1}/m, then there is equal probability that the branch of the victim thread is T or NT;
         otherwise it is NT
         '''
         # c = self.run_attack(initial_state, victim_thread_branch)
-        n = int(math.log2(len(self.states)/2))
-        if c > 2**(n-1)/self.probability_threshold:
-            # print("Attacker chooses T")
-            return "T"
-        elif abs(c - 2**(n-1)/self.probability_threshold) < 1e-6:
-            # print("Two choices are equally probable") 
-            return np.random.choice(["T", "NT"])
+        n = int(math.log2(len(self.states)))
+        judge = (2**(n-1)-1)/self.probability_threshold
+        if self.probability_threshold !=1:
+            if c > judge:
+                # print("Attacker chooses T")
+                return "T"
+            elif abs(c - judge) < 1e-6:
+                # print("Two choices are equally probable") 
+                return np.random.choice(["T", "NT"])
+            else:
+                # print("Attacker chooses NT")
+                return "NT"
         else:
-            # print("Attacker chooses NT")
-            return "NT"
+            if abs(c - judge) < 1e-6: # c = 2^{n-1} -1
+                # print("Attacker chooses T")
+                return "NT"
+            elif abs(c - judge -1 ) < 1e-6: # c = 2^{n-1}
+                # print("Two choices are equally probable") 
+                return "T"
+            else:
+                raise ValueError("Invalid c or probability threshold m is not equal to 1")
     
 
 class PrivacySaturatingCounter(SaturatingCounters):
@@ -256,14 +269,22 @@ class PrivacySaturatingCounter(SaturatingCounters):
         otherwise it is NT
         '''
         # c = self.run_attack(initial_state, victim_thread_branch)
-        n = int(math.log2(len(self.states)/2))
+        n = int(math.log2(len(self.states)))
         judge = (2**(n-1)-1)/self.probability_threshold
-        if c > judge:
-            # print("Attacker chooses T")
-            return "T"
-        elif abs(c - judge) < 1e-6:
-            # print("Two choices are equally probable") 
-            return np.random.choice(["T", "NT"])
+        if self.probability_threshold !=1:
+            if c > judge:
+                # print("Attacker chooses T")
+                return "T"
+            elif abs(c - judge) < 1e-6:
+                # print("Two choices are equally probable") 
+                return np.random.choice(["T", "NT"])
+            else:
+                # print("Attacker chooses NT")
+                return "NT"
         else:
-            # print("Attacker chooses NT")
-            return "NT"
+            if abs(c - judge) < 1e-6: # c = 2^{n-1} -1
+                # print("Attacker chooses T")
+                return "NT"
+            elif abs(c - judge -1 ) < 1e-6: # c = 2^{n-1}
+                # print("Two choices are equally probable") 
+                return "T"
