@@ -6,6 +6,7 @@ import json
 import os
 from multiprocessing import Pool
 import re
+import numpy as np
 def calculate_sn_nt_sn(m, p):
     return 1 - m + m * (1 - p)
 
@@ -486,6 +487,12 @@ def plot_experiment12(privacy_parameter, full = False):
         # set the x axis from 10%,15% ... to 100%, small size of the font
         plt.xticks(range(len(psc2bit_list)), [f'{i*5}%' for i in range(2, 21)], fontsize=8)
         plt.xlim(0, 19)
+        # y axis 0.05 length
+        start, end = plt.gca().get_ylim()
+        # start 省略到一位小数
+        start = round(start, 1)
+        ticks = np.arange(start, 1 + 0.05, 0.05)
+        plt.yticks(ticks)
         plt.xlabel('Probability Parameter')
         plt.ylabel('Success Rate')
         plt.title(f'The Success Rate of Different Models with Privacy Parameter {privacy_parameter}')
@@ -590,6 +597,8 @@ def plot_experiment3(probablity_parameter,
     plt.plot([prsc3bit_sum_dict[key]['success_rate'] for key in sorted(prsc3bit_sum_dict.keys())], label='3-bit Privacy PSC')
     # set the x axis from keys of the dict
     plt.xticks(range(len(prsc3bit_sum_dict.keys())), [int(key) for key in sorted(prsc3bit_sum_dict.keys())])
+
+         
     plt.legend()
     plt.xlabel('Probe Number')
     plt.ylabel('Success Rate')
@@ -605,8 +614,9 @@ def plot_experiment3(probablity_parameter,
 if __name__ == "__main__":
     # expriment1_full(victim_thread_number=128)
     # expriment2_full(victim_thread_number=10000)
-    # for i in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6,0.7, 0.8, 0.9]:
+    for i in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6,0.7, 0.8, 0.9]:
+        plot_experiment12(i, full=False)
     #     if i == 0.9:
     #         print('Now we plot the full line')
     #     plot_experiment12(i, full=True)
-    plot_experiment3(probablity_parameter=0.8, privacy_parameter=0.1)
+    # plot_experiment3(probablity_parameter=0.8, privacy_parameter=0.1)
