@@ -608,7 +608,8 @@ def plot_experiment3(probablity_parameter,
         os.makedirs(f'/root/moore/plotfile_probe')
     plt.savefig(f'/root/moore/plotfile_probe/probe_{probablity_parameter}_{privacy_parameter}.png')
 
-
+def random_response():
+    pass
 
 
 if __name__ == "__main__":

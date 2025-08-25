@@ -288,3 +288,118 @@ class PrivacySaturatingCounter(SaturatingCounters):
             elif abs(c - judge -1 ) < 1e-6: # c = 2^{n-1}
                 # print("Two choices are equally probable") 
                 return "T"
+
+
+class RandomResponseSaturatingCounter(SaturatingCounters):
+    '''
+    A Markov chain model of saturating counters, where the state transition is probabilistic
+    satisfies random response.
+    '''
+    def __init__(self, 
+                 states, 
+                 probability_threshold,
+                 random_response_probability,
+                 transition_dict = None, transition_matrix = None):
+        '''
+        :param states: list of states
+        :param probability_threshold: probability threshold, which is m in our paper
+        :param random_response_probability: the randomized response mechanism returns the correct bit with probability p and the inverted bit with probability 1−p
+        :param transition_dict: dictionary of transition probabilities
+        :param transition_matrix: matrix of transition probabilities, shape = (state_space, state_space, inputs_space)
+        '''
+        super().__init__(states, transition_dict, transition_matrix)
+        self.probability_threshold = probability_threshold
+        self.privacy_threshold = privacy_threshold
+        self.is_member()
+
+    # def get_diff_privacy_parameters(self):
+    #     '''
+    #     Get the differential privacy parameters. If privacy_threshold  p is great than or equal to 
+    #     0.5, then it is (ln(p/1-p), 0); otherwise it is (ln((1-p)/p), 0)
+    #     ''' 
+    #     if self.privacy_threshold >= 0.5:
+    #         return (math.log(self.privacy_threshold/(1-self.privacy_threshold)), 0)
+    #     else:
+    #         return (math.log((1-self.privacy_threshold)/self.privacy_threshold), 0)
+    
+    def is_member(self):
+        '''
+        P(SN, T, SN) = 1 − m + mp, P(SN, T, WN1) = m(1 − p),
+
+        P(SN, NT, SN) = 1 − m + m(1 − p), P(SN, NT, WN1) = mp,
+
+        P(WNi, T, WNi+1) = m*p, P(WNi+1, NT, WNi) = m*p,
+
+        # random response
+        P(WNi, NT, WNi+1) = m*(1-p), P(WNi+1, T, WNi) = m*(1-p),
+
+
+        P(WNi, T, WNi) = 1 − m, P(WNi, NT, WNi) = 1 − m,
+
+        P(ST, T, ST) = 1 − m + m(1 − p), P(ST, T, WT1) = mp,
+
+        P(ST, NT, ST) = 1 − m + mp, P(ST, NT, WT1) = m(1 − p),
+
+        P(WTi, NT, WTi+1) = m*p, P(WTi+1, T, WTi) = m*p,
+
+        # random response
+        P(WTi, T, WTi+1) = m*(1-p), P(WTi+1, NT, WTi) = m*(1-p),
+
+        P(WTi, T, WTi) = 1 − m, P(WTi, NT, WTi) = 1 − m,
+
+        p(WT_{2^(bit-1)-1}, NT, SN) = m*p, P(WN_{2^(bit-1)-1}, T, ST) = m*p
+
+        # random response
+        P(WT_{2^(bit-1)-1}, T, SN) = m*(1-p), P(WN_{2^(bit-1)-1}, NT, ST) = m*(1-p),
+
+
+        p(WT_{2^(bit-1)-1}, T, WT_{2^(bit-1)-1}) = 1 - m, P(WN_{2^(bit-1)-1}, NT, WN_{2^(bit-1)-1}) = 1 - m
+        '''
+        assert self.transition_dict["SN"]["T"]["SN"] == 1 - self.probability_threshold + self.probability_threshold*self.privacy_threshold
+        assert self.transition_dict["SN"]["T"]["WN1"] == self.probability_threshold*(1 - self.privacy_threshold)
+        assert self.transition_dict["SN"]["NT"]["SN"] == 1 - self.probability_threshold + self.probability_threshold*(1 - self.privacy_threshold)
+        assert self.transition_dict["SN"]["NT"]["WN1"] == self.probability_threshold*self.privacy_threshold
+        assert self.transition_dict["ST"]["T"]["ST"] == 1 - self.probability_threshold + self.probability_threshold*(1 - self.privacy_threshold)
+        assert self.transition_dict["ST"]["T"]["WT1"] == self.probability_threshold*self.privacy_threshold
+        assert self.transition_dict["ST"]["NT"]["ST"] == 1 - self.probability_threshold + self.probability_threshold*self.privacy_threshold
+        assert self.transition_dict["ST"]["NT"]["WT1"] == self.probability_threshold*(1 - self.privacy_threshold)
+        last_number = int(len(self.states)/2) -1
+        assert self.transition_dict["WT"+str(last_number)]["NT"]["SN"] == self.probability_threshold * self.random_response_probability
+        assert self.transition_dict["WN"+str(last_number)]["T"]["ST"] == self.probability_threshold * self.random_response_probability
+        '''
+        random response
+        '''
+        assert self.transition_dict["WT"+str(last_number)]["T"]["SN"] == self.probability_threshold * (1 - self.random_response_probability)
+        assert self.transition_dict["WN"+str(last_number)]["NT"]["ST"] == self.probability_threshold * (1 - self.random_response_probability)
+
+        assert self.transition_dict["WT"+str(last_number)]["T"]["WT"+str(last_number)] == 1 - self.probability_threshold
+        assert self.transition_dict["WN"+str(last_number)]["NT"]["WN"+str(last_number)] == 1 - self.probability_threshold
+        if len(self.states) > 4: # 2-bit doesn't have WN2, WT2
+            for i in range(1, int(math.log2(len(self.states)/2))):
+                assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i+1)] == self.probability_threshold * self.random_response_probability
+
+
+                assert self.transition_dict["WN"+str(i)]["T"]["WN"+str(i)] == (1 - self.probability_threshold)
+                assert self.transition_dict["WN"+str(i)]["NT"]["WN"+str(i)] == 1 - self.probability_threshold
+
+                assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i+1)] == self.probability_threshold * self.random_response_probability
+
+
+                assert self.transition_dict["WT"+str(i)]["T"]["WT"+str(i)] == 1 - self.probability_threshold
+                assert self.transition_dict["WT"+str(i)]["NT"]["WT"+str(i)] == 1 - self.probability_threshold
+
+                '''
+                random response
+                '''
+                assert self.transition_dict["WN"+str(i)]["NT"]["WN"+str(i+1)] == self.probability_threshold * (1 - self.random_response_probability)
+                assert self.transition_dict["WT"+str(i)]["T"]["WT"+str(i+1)] == self.probability_threshold * (1 - self.random_response_probability)
+                
+
+                if i != int(math.log2(len(self.states)/2)) - 1:
+                    assert self.transition_dict["WN"+str(i+1)]["NT"]["WN"+str(i)] == self.probability_threshold * self.random_response_probability
+                    assert self.transition_dict["WT"+str(i+1)]["T"]["WT"+str(i)] == self.probability_threshold * self.random_response_probability
+                    '''
+                    random response
+                    '''
+                    assert self.transition_dict["WN"+str(i+1)]["T"]["WN"+str(i)] == self.probability_threshold * (1-self.random_response_probability)
+                    assert self.transition_dict["WT"+str(i+1)]["NT"]["WT"+str(i)] == self.probability_threshold * (1-self.random_response_probability)
